@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Bellefair', serif;
+  scroll-behavior: smooth !important;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: #8A2BE2;
+}
+
+::selection {
+  color: white;
+  background: #8A2BE2;
+}
+
+.loading {
+  min-width: 100%;
+  min-height:100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  position: absolute;
+  z-index: 10;
+}
+
+.navbar-inner {
+  width: 100%;
+  background: transparent;
+}
+
+.navbar-inner .row{
+  width:100%;
+  height: 90%;
+  text-align: center;
+  align-items: center;
+  font-size: 24px;
+  /* border: 1px solid white; */
+  background: transparent !important;
+}
+
+.my-carousel {
+  margin-top: -54px;
+}
+.carousel-item-custom {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  height: 100vh;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.carousel-item-custom img {
+  opacity: 0.8;
+  z-index: -1;
+}
+
+.col-1 a {
+  text-decoration: none !important;
+  color: white;
+}
+
+.col-1 a:hover {
+  color: white;
+  font-weight: bolder;
+  border-bottom: 4px;
+}
+
+.custom-button {
+  color: white;
+  border-bottom: 2px solid white;
+  width: fit-content;
+}
+
+.row .col-7 {
+  font-size: 24px;
+  color: white;
+  font-weight: bolder;
+}
+
+.container {
+  margin-top: 100px;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+
+.profile {
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.profile-pic img{
+  margin-left: -20px;
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.profile-dis{
+  padding: 10px;
+}
+
+.profile-dis h1{
+  padding-top: 50px;
+  justify-self: center;
+  text-align: center;
+}
+
+.profile-dis p::first-letter{
+  font-size: 32px;
+  color: #8A2BE2;
+}
+.profile-dis p{
+  font-size: 20px;
+  margin-right: 20px;
+  text-align: justify;
+}
+
+.panel .bio-title{
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: #8A2BE2;
+  text-transform: uppercase;
+}
+
+.movies-wrapper {
+  padding-top: 50px;
+}
+
+.movies-wrapper .movies-title {
+  margin-bottom: 30px;
+  font-weight: bold;
+  color:#8A2BE2;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.card-title {
+  font-size: 150%;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #8A2BE2;
+}
+
+.card img {
+  width: 100%;
+  height: 300px;
+}
+
+.card a{
+  text-decoration: none !important;
+  color:#8A2BE2
+}
+
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: white;
+  color: #8A2BE2;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+  border: 1px solid #8A2BE2;
+}
+
+#myBtn:hover {
+  background-color: #8A2BE2;
+  color: white;
+}
+
+footer {
+  width: 100%;
+  height: 90px;
+  border-top: 1px solid black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.copyright {
+  font-size: 20px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #8A2BE2;
+}
+
+.copyright a a:hover{
+  text-decoration: none;
+}
+
+@media (max-width: 991px) {
+  .row .col-7, .row .col-1 {
+    font-size: 70%;
+  }
+
+  .carousel-item-custom {
+    height: 60%;
+  }
+  
+  .profile-dis h1 {
+    font-size: 70%;
+  }
+  
+  .profile-dis p {
+    font-size: 50%;
+  }
+  
+  .profile {
+    font-size: 28px;
+    margin-left: 50px;
+  }
+
+  .pad-small {
+    padding-bottom: 20px;
+  }
+}

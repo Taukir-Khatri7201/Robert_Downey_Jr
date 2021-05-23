@@ -1,0 +1,195 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Before Loading the whole Page -->
+    <div class="loading">
+        <img src="assets/arcreactor.gif" width="70px" height="70px">
+    </div>
+
+    <!-- After whole page is loaded -->
+    <div class="loaded" hidden>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        <div class="navbar navbar-inverse" id="start">
+            <class class="navbar-inner">
+                <div class="row justify-content-between">
+                    <div class="col-1"></div>
+                    <div class="col-7" style="text-align: left;">Robert Downey Jr.</div>
+                    <div class="col-1"><a href="#bio" class="custom-button">BIO</a></div>
+                    <div class="col-1"><a href="#movies" class="custom-button">MOVIES</a></div>
+                    <div class="col-1"></div>
+                </div>
+            </class>
+        </div>
+
+        <div class="carousels">
+            <div class="bd-example">
+                <div id="carouselExampleCaptions" class="my-carousel carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item carousel-item-custom active">
+                            <img src="assets/carousel-2.jpg" class="d-block w-100" alt="..." width="100%" height="100%">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h1>Avengers: Endgame</h1>
+                                <cite>" I Love You 3000 "</cite>
+                            </div>
+                        </div>
+                        <div class="carousel-item carousel-item-custom">
+                            <img src="assets/carousel-3.jpg" class="d-block w-100" alt="..." width="100%" height="100%">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h1>Avengers: Infinity War</h1>
+                                <cite>" This is no plcae to die "</cite>
+                            </div>
+                        </div>
+                        <div class="carousel-item carousel-item-custom">
+                            <img src="assets/carousel-1.jpg" class="d-block w-100" alt="..." width="100%" height="100%">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h1>DOLITTLE</h1>
+                                <cite>" You should go. It's my past that's caught up with me, not yours. Yeah? "</cite>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container panel" id="bio">
+            <h2 class="bio-title">BIO</h2>
+            <h2 class="row profile">
+                <div class="col-6 profile-pic"><img src="assets/robert.jpg" alt="Robert Downey Jr."></div>
+                <div class="col-6">
+                    <div class="profile-dis">
+                        <h1> <u>Robert Downey Jr.</u> </h1>
+                        <p>Robert Downey Jr. is an American actor known for roles in a wide variety of films, including
+                            'Iron Man,' 'The Avengers',
+                            'Sherlock Holmes' and 'Chaplin.'</p>
+                        <p>Born in New York City on April 4, 1965, Robert Downey Jr. began acting as a young child. He
+                            made his first film
+                            appearances and was a cast member on Saturday Night Live in the 1980s, but his growing
+                            success was marred by years of
+                            struggles with drug abuse. Eventually turning his life around, he earned a resurgence of
+                            critical and popular acclaim,
+                            and is considered one of Hollywood's A-list actors.</p>
+
+                        <p>“I think part of my destiny has to be realizing that I'm not the poster boy for drug abuse.
+                            I'm just this guy who has a
+                            really strong sense of wanting home and wanting foundation and having not had it, I now
+                            choose to create it.”
+                        <div class="blockquote-footer">Robert Downey Jr.</div>
+                        </p>
+                    </div>
+                </div>
+            </h2>
+        </div>
+
+        <div class="container movies-wrapper" id="movies">
+            <h2 class="movies-title">Recent Movies</h2>
+            <div class="row justify-content-between">
+                <div class="col-md-3 col-sm-12 col-12">
+                    <div class="card pad-small">
+                        <a href="https://www.amazon.com/Dolittle-Jr-Robert-Downey/dp/B083L55199">
+                            <img src="assets/movie-1.jpg" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    DOLITTLE
+                                    <pre>   </pre>
+                                </h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-12 col-12">
+                    <div class="card pad-small">
+                        <a href="https://www.hotstar.com/in/movies/avengers-endgame/1260013556">
+                            <img src="assets/movie-2.jpg" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Avengers (Endgame)</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-12 col-12">
+                    <div class="card pad-small">
+                        <a href="https://www.hotstar.com/in/movies/avengers-infinity-war/1660010677">
+                            <img src="assets/movie-3.jpg" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Avengers (Infinity War)</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="page-footer">
+        <div class="copyright">Copyright &#169; 2021 | Designed By <a
+                href="https://www.linkedin.com/in/taukirahmed-khatri-b6b7071a7/">Taukirahmed Khatri</a></div>
+    </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script>
+        $(window).on("load", function () {
+
+            $(".loading").delay(500).fadeOut("fast");
+            $(".loaded").attr("hidden", false);
+        });
+    </script>
+
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+</body>
+
+</html>
